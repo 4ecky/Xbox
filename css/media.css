@@ -1,0 +1,264 @@
+/* для маленьких мониторов */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+
+  /* .................HEADER */
+  .header{
+    height: auto;
+  }
+  .header__content-title {
+    max-width: 970px;
+  }
+
+  /* .................BROWSE */
+  .browse__offer-text {
+    top: 25%;
+    right: 4%;
+  }
+
+  /* .................GAMES */
+  .games__offer-text {
+    margin: 196px 67px 196px 30px;
+  }
+
+  .games__inner {
+    background: url(../img/games/cyberpunk.png) 80% 130px no-repeat,
+      url(../img/games/medium.png) 98% 63px no-repeat,
+      url(../img/games/valhalla.png) 98% 110% no-repeat,
+      url(../img/games/background.png) 50% / cover no-repeat;
+  }
+
+  /*------------INSIDE  */
+  .inside__button:nth-child(1) {
+    top: 70px;
+    left: 550px;
+  
+  }
+  
+  .inside__button:nth-child(2) {
+    top: 270px;
+    left: 590px;
+  }
+  
+  .inside__button:nth-child(3) {
+    top: 370px;
+    left: 380px;
+  }
+  
+  .inside__button:nth-child(4) {
+    top: 380px;
+    left: 210px;
+  }
+  .inside__bottom-label{
+    left: 200px;
+  }
+  .inside__bottom-images{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* для планшетов */
+@media (max-width:992px) {
+  .container {
+    max-width: 750px;
+  }
+  /* .................HEADER */
+  .burger{
+    display: block;
+    width: 40px;
+    height: 30px;
+    position: relative;
+  }
+  .burger:before,
+  .burger:after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: #fefefe;
+    position: absolute;
+    left: 0;
+  }
+  .burger:before{
+    top: 0;
+  }
+  .burger:after{
+    bottom: 0;
+  }
+  .burger__center {
+    position: absolute;
+    left: 0;
+    top: 13px;
+    height: 3px;
+    width: 100%;
+    background-color: #fefefe;
+  }
+  .close__menu{
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin: 50px auto 0;
+  }
+  .close__menu:before,
+  .close__menu:after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: #fefefe;
+    position: absolute;
+    left: 0;
+  }
+  .close__menu:before{
+    top: 25px;
+    transform: rotate(-45deg);
+  }
+  .close__menu:after{
+    bottom: 12px;
+    transform: rotate(45deg);
+  }
+  .menu__nav{
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 20;
+    transition: all .2s linear;
+  }
+  .menu__nav._active{
+    top: 0;
+    transition: all .2s linear;
+  }
+  .menu__list{
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30%;
+    position: relative;
+  }
+  .menu__list-item{
+    flex: 0 1 100%;
+    font-size: 72px;
+  }
+  .menu__list-item:not(:last-child) {
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+  .menu__list-link{
+    font-size: 30px;
+  }
+  /* .................ADVANTAGES */
+  .advantages__inner{
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 60px;
+  }
+  .advantages__item{
+    flex: 0 1 50%;
+    margin-bottom: 40px;
+  }
+  .advantages__item:not(:last-child) {
+    margin-right: 0px;
+}
+  /* .................BROWSE */
+  .browse__inner{
+  margin: 60px 0 70px 0;
+
+  }
+  .browse__offer-text{
+    top: 12%;
+    right: 2%;
+  }
+  /* .................GAMES */
+  .games__inner {
+    background:
+      url(../img/games/medium.png) 98% 63px no-repeat,
+      url(../img/games/valhalla.png) 98% 110% no-repeat,
+      url(../img/games/background.png) 50% / cover no-repeat;
+  }
+  /* .................CONTROLLER */
+  .controller__content{
+    flex-wrap: wrap;
+  }
+  .controller__column{
+    flex: 0 1 100%;
+    justify-content: center;
+    text-align: center;
+  }
+  .controller__column:nth-child(1){
+    order: 2;
+  }
+  .controller__column:nth-child(2){
+    order: 1;
+  }
+  .controller__column:first-child {
+    margin-top: 15px;
+  }
+  .controller__subs{
+    margin: 0 auto 70px;
+  }
+  .controller__image{
+    position: relative;
+  }
+  /* .................INSIDE */
+  .inside__inner{
+    margin-top: 170px;
+  }
+  .inside__subs{
+    top: 73%;
+    left: 55%;
+  }
+  .inside__button:nth-child(1) {
+    top: 50px;
+    left: 415px;
+  
+  }
+  
+  .inside__button:nth-child(2) {
+    top: 230px;
+    left: 450px;
+  }
+  
+  .inside__button:nth-child(3) {
+    top: 300px;
+    left: 300px;
+  }
+  
+  .inside__button:nth-child(4) {
+    top: 300px;
+    left: 150px;
+  }
+  .inside__bottom-text{
+    margin-top: 50px;
+  }
+  .inside__bottom-label{
+    left: 150px;
+  }
+  
+  /* .................FOOTER */
+  .footer__inner{
+    margin-top: 100px;
+  }
+  .menu__nav-footer{
+    display: none;
+  }
+}
+
+/* ниже планшетов */
+@media (max-width:767px) {
+  .container {
+    max-width: none;
+  }
+/* .................CONTROLLER */
+.inside__inner{
+  max-width: 100%;
+}
+.controller__option{
+  max-width: 100%;
+}
+/* .................INSIDE */
+
+}
